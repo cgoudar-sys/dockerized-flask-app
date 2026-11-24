@@ -1,0 +1,17 @@
+Task 9: Shared volume verification
+
+task9-writer:
+Hello from the first container!
+Reply from the second container!
+
+task9-reader:
+Hello from the first container!
+Reply from the second container!
+
+/task9-writer
+volume task9-shared-data -> /data
+/task9-reader
+volume task9-shared-data -> /data
+
+PASS: File written in the first container was read in the second.
+PASS: Reply appended in the second container was read in the first.
