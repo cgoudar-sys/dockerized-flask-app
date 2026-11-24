@@ -1,0 +1,11 @@
+Before container replacement:
+1|PostgreSQL data persists
+2|Stored in postgres-data
+Original container: bb19223dbe169225b9070274f439b497073e8b2f4f2afe138be0b92ae6313d5d
+Replacement container: d493151d3d88d8886fe8f15b3be097ed413156d88f44d80cc00cd02e8c383beb
+After container replacement:
+1|PostgreSQL data persists
+2|Stored in postgres-data
+PASS: Both rows persisted after removing the first container and creating a new container.
+volume postgres-data -> /var/lib/postgresql/data
+
