@@ -1,0 +1,61 @@
+3bbbc0c02bf46cd6e57f43b35cd3146e6d656227f1f02aa7f1e9efcae9a3a792
+b26827b2f49673e57e05b5a9b496f4d3b235bef53970472cceebfb56173eaf6f
+#0 building with "desktop-linux" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 217B done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/library/python:3.12-slim
+#2 ...
+
+#3 [auth] library/python:pull token for registry-1.docker.io
+#3 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/library/python:3.12-slim
+#2 DONE 1.8s
+
+#4 [internal] load .dockerignore
+#4 transferring context: 72B done
+#4 DONE 0.0s
+
+#5 [1/5] FROM docker.io/library/python:3.12-slim@sha256:5e2bdb1b0d542d5039cffb8181c65930093949194a65c365dfb1b0fe13a4fa5b
+#5 resolve docker.io/library/python:3.12-slim@sha256:5e2bdb1b0d542d5039cffb8181c65930093949194a65c365dfb1b0fe13a4fa5b done
+#5 DONE 0.0s
+
+#6 [internal] load build context
+#6 transferring context: 709B done
+#6 DONE 0.0s
+
+#7 [2/5] WORKDIR /app
+#7 CACHED
+
+#8 [3/5] COPY requirements.txt .
+#8 CACHED
+
+#9 [4/5] RUN pip install --no-cache-dir -r requirements.txt
+#9 CACHED
+
+#10 [5/5] COPY app.py .
+#10 CACHED
+
+#11 exporting to image
+#11 exporting layers done
+#11 exporting manifest sha256:6fa9c2f16bd699dd45f48ba55065936a2e0bc8e39c55e3e2c332e16a716c2660 done
+#11 exporting config sha256:15bbb07e3bb62794ec79c2020bef961e5940b956cace8dcb0c164b43bc7d19cd done
+#11 exporting attestation manifest sha256:b0732091fb0c8e7d23ce19ca2ab746ffca87ac3cebfcdfd1892663cd11940754 done
+#11 exporting manifest list sha256:92d38d8270f3d46e2033e267550b9f7538ce7889286c63f3cb4c58d4548ac129 done
+#11 naming to docker.io/library/task4-flask:latest done
+#11 unpacking to docker.io/library/task4-flask:latest done
+#11 DONE 0.0s
+
+View build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/v302ne9cyap9futpmqqh4y21u
+d7600f414c698ef68f47a8435fe65a8d9e2960a8b66a0e34c31debd0830b8360
+redis resolves to 172.19.0.2
+Redis PING: PASS
+Welcome! This page has been visited 1 times.
+Welcome! This page has been visited 2 times.
+Flask to Redis communication: PASS
+task4-bridge driver=bridge
+redis 172.19.0.2/16
+task4-flask 172.19.0.3/16
