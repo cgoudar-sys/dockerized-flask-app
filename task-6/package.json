@@ -1,0 +1,9 @@
+{
+  "name": "task6-multistage-node",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "node --check server.js && node -e \"require('node:fs').mkdirSync('dist', { recursive: true }); require('node:fs').copyFileSync('server.js', 'dist/server.js');\"",
+    "start": "node server.js"
+  }
+}
