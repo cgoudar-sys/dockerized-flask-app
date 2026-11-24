@@ -1,0 +1,30 @@
+Task 5 verification — 2026-11-24
+Image: alpine:3.22
+Script exit status: 0
+
+Loopback ping in container-1: 1 transmitted, 1 received, 0% packet loss.
+Loopback ping in container-2: 1 transmitted, 1 received, 0% packet loss.
+
+Separate networks, ping by name:
+ping: bad address 'container-2'
+PASS: Cross-network name ping failed.
+
+Separate networks, ping by IP (172.21.0.2):
+2 packets transmitted, 0 packets received, 100% packet loss
+PASS: Cross-network IP ping failed.
+
+Temporarily connected container-2 to network-1:
+PING container-2 (172.20.0.3)
+2 packets transmitted, 2 packets received, 0% packet loss
+
+Disconnected container-2 from network-1; ping to 172.21.0.2:
+2 packets transmitted, 0 packets received, 100% packet loss
+PASS: Isolation restored.
+
+Final membership:
+network-1 driver=bridge
+container-1 172.20.0.2/16
+network-2 driver=bridge
+container-2 172.21.0.2/16
+
+This file summarizes the observed command output from the successful run.
