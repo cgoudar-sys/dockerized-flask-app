@@ -1,0 +1,55 @@
+8.4: Pulling from library/mysql
+c9be696be5d3: Pulling fs layer
+c28a2ecb5b29: Pulling fs layer
+980a7d483fa4: Pulling fs layer
+06e0bba01872: Pulling fs layer
+29764e778bbb: Pulling fs layer
+82683b815ff1: Pulling fs layer
+7a10b58b76f7: Pulling fs layer
+417cdca15a60: Pulling fs layer
+018e91d1796f: Pulling fs layer
+9904dfb6ebfa: Pulling fs layer
+c28a2ecb5b29: Download complete
+c9be696be5d3: Download complete
+29764e778bbb: Download complete
+9904dfb6ebfa: Download complete
+980a7d483fa4: Download complete
+06e0bba01872: Download complete
+7a10b58b76f7: Download complete
+018e91d1796f: Download complete
+a59955fd9a28: Download complete
+417cdca15a60: Download complete
+7a10b58b76f7: Pull complete
+018e91d1796f: Pull complete
+417cdca15a60: Pull complete
+c9be696be5d3: Pull complete
+9904dfb6ebfa: Pull complete
+980a7d483fa4: Pull complete
+29764e778bbb: Pull complete
+06e0bba01872: Pull complete
+7aabb3a3ad46: Download complete
+82683b815ff1: Download complete
+c28a2ecb5b29: Pull complete
+82683b815ff1: Pull complete
+Digest: sha256:8c233bad33d520a7aae1c1e619c3a9775f4a1ba2d463d692fada04ec7f40be00
+Status: Downloaded newer image for mysql:8.4
+docker.io/library/mysql:8.4
+task3-mysql-data
+Starting the first MySQL container with the named volume.
+614393b6d107f506191ae12488b2d842f5519ec1e95237e81c843860e3f8a304
+Rows before replacement:
+1	Data survives container replacement
+2	Stored in a Docker named volume
+Flag --time has been deprecated, use --timeout instead
+task3-mysql-first
+task3-mysql-first
+Starting a new MySQL container with the same volume.
+c61e129612129555f3f523d8bc8df64643d3422c85aa7d6b87a449f0f4c93e7c
+Rows after replacement:
+1	Data survives container replacement
+2	Stored in a Docker named volume
+PASS: Different container IDs; both rows persisted in task3-mysql-data.
+Original container: 614393b6d107f506191ae12488b2d842f5519ec1e95237e81c843860e3f8a304
+Replacement container: c61e129612129555f3f523d8bc8df64643d3422c85aa7d6b87a449f0f4c93e7c
+volume task3-mysql-data -> /var/lib/mysql
+
